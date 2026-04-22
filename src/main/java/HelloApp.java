@@ -4,7 +4,6 @@ public class HelloApp {
         if (args.length > 0) {
             System.out.print("Hello ");
 
-            // Enhanced for loop
             for (String name : args) {
                 System.out.print(name + " ");
             }
