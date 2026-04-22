@@ -2,29 +2,18 @@ public class HelloApp {
     public static void main(String[] args) {
 
         if (args.length > 0) {
-            System.out.print("Hello ");
+            String result = "Hello ";
 
+            // build string with delimiter
             for (String name : args) {
-                System.out.print(name + " ");
+                result += name + ", ";
             }
 
-public class HelloApp {
-    public static void main(String[] args) {
+            // remove last ", " using substring
+            result = result.substring(0, result.length() - 2);
 
-        if (args.length > 0) {
-            System.out.print("Hello ");
+            System.out.println(result);
 
-            for (String name : args) {
-                System.out.print(name + " ");
-            }
-
-            System.out.println();
-
-        } else {
-            System.out.println("Hello, World!");
-        }
-    }
-}
         } else {
             System.out.println("Hello, World!");
         }
