@@ -13,6 +13,13 @@ public class HelloApp {
         }
     }
 }
+            String names = String.join(", ", args);
+            System.out.println("Hello " + names);
+        } else {
+            System.out.println("Hello, World!");
+        }
+    }
+}
         }
     }
 }
